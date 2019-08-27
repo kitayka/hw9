@@ -4,7 +4,7 @@ body {
 .main_image {
 	height: 100vh;
 	position: relative;
-	background: url(../images/header_image.png) no-repeat center/cover;
+	background: url(../images/header_image.png) center/cover no-repeat ;
 }
 
 .cover-main_image {
@@ -20,28 +20,33 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
 }
 
 .logo {
 	border: 3px solid #FFFFFF;
-	color: #FFFFFF;
-	text-align: center;
+	padding: 20px 110px;
 }
 .top-line {
+	margin-top: 0;
+	margin-bottom: 10px;
 	font-size: 52px;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-decoration: underline;
-	padding-top: 20px;
+	border-bottom: 2px solid #fff;
 }
 
 .bottom-line {
+	margin-top: 0;
+	margin-bottom: 0;
 	font-size: 27px;
 	font-weight: 400;
 	text-transform: uppercase;
-	letter-spacing: 12.96px;
-	margin-right: -0.5em;
-	padding-bottom: 20px;
+}
+
+.bottom-line span {
+	letter-spacing: initial;
 }
 .header_slogan {
 	max-width: 325px;
@@ -52,7 +57,7 @@ body {
 	color: #FFFFFF;
 	margin: 35px auto 0;
 }
-.header-scroll {
+.header-scroll_button {
 	position: absolute;
 	left: 50%;
 	bottom: 50px;
@@ -63,47 +68,38 @@ body {
 	cursor: pointer;
 }
 
-button:focus {
-    outline: none;
+.navigation {
+	position: relative;
+	max-width: 1000px;
+	margin: 20px auto 0;
 }
 
-.menu-line {
-	max-width: 1200px;
-	margin: 40px auto 0;
-	padding: 0;
+.navigation_home-page {
+	margin-left: 5px;
 }
-
-.home-page {
-	float: left;
-	margin-left: 110px;
-
-}
-.button-menu {
-	float: right;
-	margin-right: 120px;
+.navigation_button-menu {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 	border: 0;
 	padding: 0;
+	margin-right: 5px;
 	background: none;
 	cursor: pointer;
 
 }
-.float-clear {
-	clear: both;
-}
+
 main {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 130px auto 0;
 }
-.main-content {
-	margin-top: 130px;
-	display: flex;
-	font-size: 0;
-	
-}
 .left-column {
-	margin-left: 110px;
-	margin-right: 120px;
-	width: 35%;
+	display: inline-block;
+	max-width: 330px;
+	margin-right: 95px;
+}
+.left-column_style {
+	margin-top: 0;
 	font-weight: 400;
 	font-size: 27px;
 	line-height: 52px;
@@ -111,80 +107,82 @@ main {
 	letter-spacing: .5px;
 	box-sizing: border-box;
 	border-top: 3px solid;
-	padding-top: 7px;
 }
 .right-column {
-	margin-right: 120px;
-	width: 65%;
+	display: inline-block;
+	max-width: 570px;
+	vertical-align: top;
+	
+}
+.right-column_style {
+	margin-top: 0;
 	font-size: 18px;
 	font-style: italic;
 	line-height: 26px;
 }
 .img-studio {
-	width: 100%;
-	margin-top: 150px;
-	margin-left: 110px;
-	margin-bottom: 0;
+	max-width: 970px;
+	margin: 100px auto 0;
 }
 .dark_background {
-	display: inline-block;
 	background-color: #1f3135;
 	width: 100%;
 	margin: 100px auto 0;
 	min-height: 450px;
-	color: #ffffff;
+	color: #fff;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 55px;
 }
-.dark_background h2 {
+.before-after_line {
 	text-align: center;
 	width: auto;
-	height: auto;
 	font-size: 40px;
 	font-weight: 400;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 2.4px;
-	margin-top: 70px;
+	padding-top: 70px;
+	margin-bottom: 70px;
 }
+
 .before-after_line::before {
 	content: '';
 	display: inline-block;
 	width: 50px;
 	height: 1px;
-	margin-right: 24px;
 	background: #fff;
 	vertical-align: middle;
-	margin-right: 80px;
+	margin-right: 60px;
 }
 .before-after_line::after {
 	content: '';
 	display: inline-block;
 	width: 50px;
 	height: 1px;
-	margin-right: 24px;
 	background: #fff;
 	vertical-align: middle;
-	margin-left: 80px;
+	margin-left: 60px;
 }
-.dark_background p {
-	max-width: 625px;
-	height: auto;
+
+.description {
+	margin: 0 auto;
+	max-width: 630px;
 	font-size: 18px;
 	font-style: italic;
 	line-height: 26px;
-	margin: 70px auto 0;
-	text-align: center;
+	margin-bottom: 50px;
 }
-.footer {
-	position: flex;
-	bottom: 0;
-}
+
+
 .footer {
 	text-align: center;
 	margin-bottom: 60px;
 }
-.footer img {
+.icon {
+	border-radius: 50%;
 	transform: translateY(-50%);
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 }
 .quote {
 	width: 300px;
@@ -195,7 +193,7 @@ main {
 	font-style: italic;
 	
 }
-cite {
+.signature {
 	display: inline-block;
 	text-align: center;
 	width: 85px;
